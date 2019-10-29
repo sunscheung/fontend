@@ -9,19 +9,19 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const cssmodel = new Schema({
-    coursetype:{
-        required:true,
-        type:String
-    },
-    title:{
-        required:true,
-        type:String
-    },
-    content:{
-        required:true,
-        type:String
-    }
-})
+  coursetype: {
+    required: true,
+    type: String
+  },
+  title: {
+    required: true,
+    type: String
+  },
+  content: {
+    required: true,
+    type: String
+  }
+});
 
 const CSSModel = mongoose.model("CSSModel", cssmodel);
-module.exports = CSSModel
+module.exports = CSSModel;

@@ -10,22 +10,22 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const operationModel = new Schema({
-    from:{
-        type:String,
-        required:true
-    },
-    type:{
-        type:String,
-        required:true
-    },
-    from_id:{
-        type:String,
-        required:true
-    },
-    date:{
-        type:String,
-        required:true
-    }
+  from: {
+    type: String,
+    required: true
+  },
+  type: {
+    type: String,
+    required: true
+  },
+  from_id: {
+    type: String,
+    required: true
+  },
+  date: {
+    type: String,
+    required: true
+  }
 });
 
 module.exports = mongoose.model("operation", operationModel);

@@ -10,27 +10,27 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const vipCssMessage = new Schema({
-    username:{
-        type:String,
-        required:true
-    },
-    avatar:{
-        type:String,
-        required:true
-    },
-    comment:{
-        type:String,
-        required:true
-    },
-    email:{
-        type:String,
-        required:true
-    },
-    messageTime:{
-        type:String,
-        required:true
-    }
-})
+  username: {
+    type: String,
+    required: true
+  },
+  avatar: {
+    type: String,
+    required: true
+  },
+  comment: {
+    type: String,
+    required: true
+  },
+  email: {
+    type: String,
+    required: true
+  },
+  messageTime: {
+    type: String,
+    required: true
+  }
+});
 
 const cssMessageModel = mongoose.model("cssMessageModel", vipCssMessage);
-module.exports = cssMessageModel
+module.exports = cssMessageModel;

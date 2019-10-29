@@ -12,19 +12,19 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const html5model = new Schema({
-    coursetype:{
-        required:true,
-        type:String
-    },
-    title:{
-        required:true,
-        type:String
-    },
-    content:{
-        required:true,
-        type:String
-    }
-})
+  coursetype: {
+    required: true,
+    type: String
+  },
+  title: {
+    required: true,
+    type: String
+  },
+  content: {
+    required: true,
+    type: String
+  }
+});
 
 const HTML5Model = mongoose.model("HTML5Model", html5model);
-module.exports = HTML5Model
+module.exports = HTML5Model;

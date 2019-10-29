@@ -11,25 +11,25 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const adminModel = new Schema({
-    email:{
-        required:true,
-        type:String
-    },
-    username:{
-        required:true,
-        type:String
-    },
-    password:{
-        required:true,
-        type:String,
-        set(val){
-            return bcrypt.hashSync(val, 10);
-        }
-    },
-    date:{
-        required:true,
-        type:String
+  email: {
+    required: true,
+    type: String
+  },
+  username: {
+    required: true,
+    type: String
+  },
+  password: {
+    required: true,
+    type: String,
+    set(val) {
+      return bcrypt.hashSync(val, 10);
     }
+  },
+  date: {
+    required: true,
+    type: String
+  }
 });
 
 module.exports = mongoose.model("Admin", adminModel);

@@ -6,27 +6,27 @@
  * @return:
  **/
 
- const mongoose = require("mongoose");
- const Schema = mongoose.Schema;
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
- const userregister_log = new Schema({
-     email:{
-         type:String,
-         required:true
-     },
-     username:{
-         type:String,
-         required:true
-     },
-     userID:{
-         type:String,
-         required:true
-     },
-     registerTime:{
-         type:String,
-         required:true
-     }
- })
+const userregister_log = new Schema({
+  email: {
+    type: String,
+    required: true
+  },
+  username: {
+    type: String,
+    required: true
+  },
+  userID: {
+    type: String,
+    required: true
+  },
+  registerTime: {
+    type: String,
+    required: true
+  }
+});
 
- const UserRegister_Log = mongoose.model("UserRegister_Log", userregister_log);
- module.exports = UserRegister_Log
+const UserRegister_Log = mongoose.model("UserRegister_Log", userregister_log);
+module.exports = UserRegister_Log;

@@ -6,27 +6,26 @@
  * @return:
  **/
 
-
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const indexModel = new Schema({
-    url:{
-        required:true,
-        type:String
-    },
-    img:{
-        required:true,
-        type:String,
-    },
-    title:{
-        required:true,
-        type:String
-    },
-    content:{
-        type:String,
-        required:true
-    }
+  url: {
+    required: true,
+    type: String
+  },
+  img: {
+    required: true,
+    type: String
+  },
+  title: {
+    required: true,
+    type: String
+  },
+  content: {
+    type: String,
+    required: true
+  }
 });
 
 // const User = mongoose.model("User", userModel);

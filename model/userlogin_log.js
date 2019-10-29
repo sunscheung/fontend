@@ -6,23 +6,23 @@
  * @return:
  **/
 
- const mongoose = require("mongoose");
- const Schema = mongoose.Schema;
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
- const userlogin_log = new Schema({
-     email:{
-         type:String,
-         required:true
-     },
-     username:{
-         type:String,
-         required:true
-     },
-     loginTime:{
-         type:String,
-         required:true
-     }
- })
+const userlogin_log = new Schema({
+  email: {
+    type: String,
+    required: true
+  },
+  username: {
+    type: String,
+    required: true
+  },
+  loginTime: {
+    type: String,
+    required: true
+  }
+});
 
- const UserLogin_Log = mongoose.model("UserLogin_Log", userlogin_log);
- module.exports = UserLogin_Log
+const UserLogin_Log = mongoose.model("UserLogin_Log", userlogin_log);
+module.exports = UserLogin_Log;

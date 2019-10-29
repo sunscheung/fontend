@@ -6,31 +6,31 @@
  * @return:
  **/
 
- const mongoose = require("mongoose");
- const Schema = mongoose.Schema;
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
- const userbuy_log = new Schema({
-     email:{
-         type:String,
-         required:true,
-     },
-     username:{
-         type:String,
-         required:true
-     },
-     courseType:{
-         required:true,
-         type:String
-     },
-     totalMoney:{
-        required:true,
-        type:String
-     },
-     buyTime:{
-         required:true,
-         type:String
-     }
- })
+const userbuy_log = new Schema({
+  email: {
+    type: String,
+    required: true
+  },
+  username: {
+    type: String,
+    required: true
+  },
+  courseType: {
+    required: true,
+    type: String
+  },
+  totalMoney: {
+    required: true,
+    type: String
+  },
+  buyTime: {
+    required: true,
+    type: String
+  }
+});
 
- const UserBuy_Log = mongoose.model("UserBuy_Log", userbuy_log);
- module.exports = UserBuy_Log
+const UserBuy_Log = mongoose.model("UserBuy_Log", userbuy_log);
+module.exports = UserBuy_Log;

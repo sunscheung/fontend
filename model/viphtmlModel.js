@@ -10,22 +10,22 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const vipHtml = new Schema({
-    title:{
-        type:String,
-        required:true
-    },
-    src:{
-        type:String,
-        required:true
-    },
-    poster:{
-        type:String,
-        required:true
-    },
-    index:{
-        type:String
-    }
-})
+  title: {
+    type: String,
+    required: true
+  },
+  src: {
+    type: String,
+    required: true
+  },
+  poster: {
+    type: String,
+    required: true
+  },
+  index: {
+    type: String
+  }
+});
 
 const vipHtmlCourse = mongoose.model("vipHtmlCourse", vipHtml);
-module.exports = vipHtmlCourse
+module.exports = vipHtmlCourse;

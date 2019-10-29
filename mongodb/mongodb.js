@@ -10,9 +10,10 @@
 const mongoose = require("mongoose");
 const mongodbURI = require("../config/mongodbURI").mongodbURI;
 
-mongoose.connect(mongodbURI, {
-            useNewUrlParser:true,
-            useFindAndModify:false
-        })
-        .then(() => console.log("******MongoDB is Connected."))
-        .catch(err => console.log(err))
+mongoose
+  .connect(mongodbURI, {
+    useNewUrlParser: true,
+    useFindAndModify: false
+  })
+  .then(() => console.log("******MongoDB is Connected."))
+  .catch(err => console.log(err));
